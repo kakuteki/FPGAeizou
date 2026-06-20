@@ -1,0 +1,20 @@
+Fitter Status : Successful - Fri Jun 19 14:56:07 2026
+Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Revision Name : img1
+Top-level Entity Name : img1
+Family : Cyclone V
+Device : 5CEBA4F23C7
+Timing Models : Final
+Logic utilization (in ALMs) : 73 / 18,480 ( < 1 % )
+Total registers : 52
+Total pins : 15 / 224 ( 7 % )
+Total virtual pins : 0
+Total block memory bits : 921,600 / 3,153,920 ( 29 % )
+Total RAM Blocks : 114 / 308 ( 37 % )
+Total DSP Blocks : 0 / 66 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

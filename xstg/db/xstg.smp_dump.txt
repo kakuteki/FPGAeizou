@@ -1,0 +1,6 @@
+
+State Machine - |xstg|state
+Name state.OVER state.PLAY state.READY 
+state.READY 0 0 0 
+state.PLAY 0 1 1 
+state.OVER 1 0 1 

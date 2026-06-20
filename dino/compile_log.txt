@@ -1,0 +1,52 @@
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+    Info: the Altera IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Altera and sold by Altera or its authorized distributors.  Please
+    Info: refer to the Altera Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Fri Jun 19 15:11:12 2026
+Info: Command: quartus_sh --flow compile dino
+Info: Quartus(args): compile dino
+Info: Project Name = C:/Users/kaga/Desktop/FPGA-Monitor/dino/dino
+Info: Revision Name = dino
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Fri Jun 19 15:11:13 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dino -c dino
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file dino.vhd
+    Info (12022): Found design unit 1: dino-RTL File: C:/Users/kaga/Desktop/FPGA-Monitor/dino/dino.vhd Line: 33
+    Info (12023): Found entity 1: dino File: C:/Users/kaga/Desktop/FPGA-Monitor/dino/dino.vhd Line: 14
+Info (12127): Elaborating entity "dino" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at dino.vhd(68): used implicit default value for signal "rom" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/kaga/Desktop/FPGA-Monitor/dino/dino.vhd Line: 68
+Error (10528): VHDL error at dino.vhd(210): value "1000" is outside the target constraint range (-64 to 900) File: C:/Users/kaga/Desktop/FPGA-Monitor/dino/dino.vhd Line: 210
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 4873 megabytes
+    Error: Processing ended: Fri Jun 19 15:11:31 2026
+    Error: Elapsed time: 00:00:18
+    Error: Total CPU time (on all processors): 00:00:42
+Error (293001): Quartus Prime Full Compilation was unsuccessful. 4 errors, 2 warnings
+Error: Flow compile (for project C:/Users/kaga/Desktop/FPGA-Monitor/dino/dino) was not successful
+Error: ERROR: Error(s) found while running an executable. See report file(s) for error message(s). Message log indicates which executable was run last.
+
+Error (23031): Evaluation of Tcl script c:/altera_lite/25.1std/quartus/common/tcl/internal/qsh_flow.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 11 errors, 2 warnings
+    Error: Peak virtual memory: 4672 megabytes
+    Error: Processing ended: Fri Jun 19 15:11:32 2026
+    Error: Elapsed time: 00:00:20
+    Error: Total CPU time (on all processors): 00:01:37

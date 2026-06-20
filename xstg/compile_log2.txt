@@ -1,0 +1,343 @@
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+    Info: the Altera IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Altera and sold by Altera or its authorized distributors.  Please
+    Info: refer to the Altera Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Fri Jun 19 16:04:20 2026
+Info: Command: quartus_sh --flow compile xstg
+Info: Quartus(args): compile xstg
+Info: Project Name = C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg
+Info: Revision Name = xstg
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Fri Jun 19 16:04:21 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off xstg -c xstg
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file xstg.vhd
+    Info (12022): Found design unit 1: xstg-RTL File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 35
+    Info (12023): Found entity 1: xstg File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 16
+Info (12127): Elaborating entity "xstg" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at xstg.vhd(56): used implicit default value for signal "rom" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 56
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "rom_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 13
+        Info (286033): Parameter WIDTHAD_A set to 11
+        Info (286033): Parameter NUMWORDS_A set to 1760
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter RAM_BLOCK_TYPE set to M10K
+        Info (286033): Parameter INIT_FILE set to sprite.mif
+Info (278001): Inferred 9 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 130
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 131
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 131
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 132
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 132
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 133
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 133
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod5" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 288
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod4" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 254
+Info (12130): Elaborated megafunction instantiation "altsyncram:rom_rtl_0"
+Info (12133): Instantiated megafunction "altsyncram:rom_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "13"
+    Info (12134): Parameter "WIDTHAD_A" = "11"
+    Info (12134): Parameter "NUMWORDS_A" = "1760"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "RAM_BLOCK_TYPE" = "M10K"
+    Info (12134): Parameter "INIT_FILE" = "sprite.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hed1.tdf
+    Info (12023): Found entity 1: altsyncram_hed1 File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/altsyncram_hed1.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 130
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 130
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "14"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_65m.tdf
+    Info (12023): Found entity 1: lpm_divide_65m File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/lpm_divide_65m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/sign_div_unsign_9nh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_o2f.tdf
+    Info (12023): Found entity 1: alt_u_div_o2f File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/alt_u_div_o2f.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 131
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 131
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ibm.tdf
+    Info (12023): Found entity 1: lpm_divide_ibm File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/lpm_divide_ibm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_olh File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/sign_div_unsign_olh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_mve.tdf
+    Info (12023): Found entity 1: alt_u_div_mve File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/alt_u_div_mve.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod1" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 131
+Info (12133): Instantiated megafunction "lpm_divide:Mod1" with the following parameter: File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 131
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "14"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 132
+Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 132
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_lbm.tdf
+    Info (12023): Found entity 1: lpm_divide_lbm File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/lpm_divide_lbm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_rlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_rlh File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/sign_div_unsign_rlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_sve.tdf
+    Info (12023): Found entity 1: alt_u_div_sve File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/alt_u_div_sve.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div2" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 133
+Info (12133): Instantiated megafunction "lpm_divide:Div2" with the following parameter: File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 133
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_vcm.tdf
+    Info (12023): Found entity 1: lpm_divide_vcm File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/lpm_divide_vcm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_5nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_5nh File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/sign_div_unsign_5nh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_g2f.tdf
+    Info (12023): Found entity 1: alt_u_div_g2f File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/alt_u_div_g2f.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod5" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 288
+Info (12133): Instantiated megafunction "lpm_divide:Mod5" with the following parameter: File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 288
+    Info (12134): Parameter "LPM_WIDTHN" = "9"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_m3m.tdf
+    Info (12023): Found entity 1: lpm_divide_m3m File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/lpm_divide_m3m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_1nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_1nh File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/sign_div_unsign_1nh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_82f.tdf
+    Info (12023): Found entity 1: alt_u_div_82f File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/db/alt_u_div_82f.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod4" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 254
+Info (12133): Instantiated megafunction "lpm_divide:Mod4" with the following parameter: File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 254
+    Info (12134): Parameter "LPM_WIDTHN" = "9"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 30
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 31
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 31
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 31
+    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 31
+    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 31
+    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 31
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 31
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/kaga/Desktop/FPGA-Monitor/xstg/xstg.vhd Line: 20
+Info (21057): Implemented 3607 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 56 output pins
+    Info (21061): Implemented 3522 logic cells
+    Info (21064): Implemented 13 RAM segments
+    Info (21062): Implemented 1 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 5016 megabytes
+    Info: Processing ended: Fri Jun 19 16:05:10 2026
+    Info: Elapsed time: 00:00:49
+    Info: Total CPU time (on all processors): 00:01:13
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Fri Jun 19 16:05:11 2026
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off xstg -c xstg
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = xstg
+Info: Revision = xstg
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (119006): Selected device 5CEBA4F23C7 for design "xstg"
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+Info (184020): Starting Fitter periphery placement operations
+Info (11191): Automatically promoted 1 clock (1 global)
+    Info (11162): CLOCK_50~inputCLKENA0 with 346 fanout uses global clock CLKCTRL_G4
+Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
+Info (176233): Starting register packing
+Info (332104): Reading SDC File: 'xstg.sdc'
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 1 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):   20.000     CLOCK_50
+Info (176235): Finished register packing
+    Extra Info (176219): No registers were packed into other blocks
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:16
+Info (170189): Fitter placement preparation operations beginning
+Info (14951): The Fitter is using Advanced Physical Optimization.
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:03:26
+Info (170191): Fitter placement operations beginning
+Info (170137): Fitter placement was successful
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
+Info (170193): Fitter routing operations beginning
+Info (170195): Router estimated average interconnect usage is 2% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 19% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
+Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+    Info (170201): Optimizations that may affect the design's routability were skipped
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
+Info (11888): Total time spent on timing analysis during the Fitter is 6.39 seconds.
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:28
+Info (144001): Generated suppressed messages file C:/Users/kaga/Desktop/FPGA-Monitor/xstg/output_files/xstg.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 7152 megabytes
+    Info: Processing ended: Fri Jun 19 16:19:46 2026
+    Info: Elapsed time: 00:14:35
+    Info: Total CPU time (on all processors): 00:49:33
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Fri Jun 19 16:19:48 2026
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off xstg -c xstg
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 5020 megabytes
+    Info: Processing ended: Fri Jun 19 16:20:00 2026
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:11
+Info (293026): Skipped module Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Fri Jun 19 16:20:01 2026
+Info: Command: quartus_sta xstg -c xstg
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Info (332104): Reading SDC File: 'xstg.sdc'
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1100mV 85C Model
+Info (332146): Worst-case setup slack is 5.339
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     5.339               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.432
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.432               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 8.835
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     8.835               0.000 CLOCK_50 
+Info: Analyzing Slow 1100mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332146): Worst-case setup slack is 5.170
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     5.170               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.437
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.437               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 8.867
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     8.867               0.000 CLOCK_50 
+Info: Analyzing Fast 1100mV 85C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332146): Worst-case setup slack is 12.883
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    12.883               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.179
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.179               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 8.499
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     8.499               0.000 CLOCK_50 
+Info: Analyzing Fast 1100mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332146): Worst-case setup slack is 13.533
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    13.533               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.168
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.168               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 8.449
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     8.449               0.000 CLOCK_50 
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 5383 megabytes
+    Info: Processing ended: Fri Jun 19 16:20:23 2026
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:34
+Info (293000): Quartus Prime Full Compilation was successful. 0 errors, 25 warnings
+Info (23030): Evaluation of Tcl script c:/altera_lite/25.1std/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Fri Jun 19 16:20:24 2026
+    Info: Elapsed time: 00:16:04
+    Info: Total CPU time (on all processors): 01:43:12

@@ -1,0 +1,6 @@
+
+State Machine - |dino|state
+Name state.OVER state.RUN state.READY 
+state.READY 0 0 0 
+state.RUN 0 1 1 
+state.OVER 1 0 1 
